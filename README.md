@@ -55,7 +55,7 @@
               (52.5125, 20.1666)                    #原始得分
               (1.0, 0.3840)                         #等比例化后的得分
               
-得出的结论是： Brenner  Laplacian  SMD   SMD2   Energy   Tenengrad 表现得比较理想
+得出的结论是： Brenner  Laplacian  SMD   SMD2   Energy   Tenengrad 表现得比较理想  
               Variance Vollath  Entropy 表现得不尽人意
 
 
