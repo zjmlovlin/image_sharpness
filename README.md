@@ -1,4 +1,4 @@
-# 实现图像的模糊检测，评价清晰度的好坏
+### 实现图像的模糊检测，评价清晰度的好坏
 
 需要的环境：
 
@@ -6,11 +6,15 @@
 
 2.opencv-python           
 
+#### 文件作用
 
+       blurry_image_generation.py 为使用四种模糊算法对原图进行模糊操作。
+       clarity_assessment.py  为9种评价方法的函数
+       image_median  image_gaussian  image_bilateral  image_average 为使用四种模糊算法生成的图像样本的目录
 
+###### 实验结果：
 
-## 一共使用了九种评价方法，下面是针对同一张图片的两种不同分辨率的样本进行的实验结果：
-
+一共使用了九种评价方法，下面是针对同一张图片的两种不同分辨率的样本进行的实验结果
 （得分越高，清晰度越高）
 1. Brenner	  
 
@@ -49,6 +53,10 @@
               (52.5125, 20.1666)                    #原始得分
               (1.0, 0.3840)                         #等比例化后的得分
               
-  
+得出的结论是： Brenner  Laplacian  SMD   SMD2   Energy   Tenengrad 表现得比较理想
+              Variance Vollath  Entropy 表现得不尽人意
+
+
+
 
 
