@@ -170,10 +170,9 @@ def main(img1, img2):
     for i in range(9):
         print('---------------------------')
         print (l_method[i])     #method name
-        print(l[i][0],l[i][1])     # original value
-        print(float(l[i][0])/float(np.max(l[i])),float(l[i][1])/float(np.max(l[i])))   #original value/max value
+        print("score     ",l[i][0],l[i][1])     # original value
+        print("normalized",float(l[i][0])/float(np.max(l[i])),float(l[i][1])/float(np.max(l[i])))   #original value/max value
         print('every image cost %f s'%time1[i])
-        
 if __name__ == '__main__':
     #original image
     img1 = cv2.imread('./image_average/image1.jpeg')
